@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.duke.counterburry.CoreController">
+   <children>
+      <Label layoutX="33.0" layoutY="61.0" text="Name :" underline="true">
+         <font>
+            <Font name="New Peninim MT" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameField" layoutX="80.0" layoutY="40.0" prefHeight="42.0" prefWidth="242.0" />
+      <Button fx:id="ConfirmButton" layoutX="341.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#Confirm" prefHeight="10.0" prefWidth="126.0" style="-fx-background-radius: 7; -fx-background-color: #1e8268; -fx-text-fill: #ffffff;" text="Confirm" textFill="WHITE" />
+      <Button fx:id="CancelButton" layoutX="341.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#Cancel" prefHeight="10.0" prefWidth="126.0" style="-fx-background-radius: 7; -fx-background-color: #8e561e; -fx-text-fill: #ffffff;" text="Cancel" textFill="WHITE" />
+      <TextArea fx:id="Display1Area" layoutX="519.0" layoutY="14.0" prefHeight="138.0" prefWidth="342.0" />
+      <Separator layoutX="7.0" layoutY="212.0" prefHeight="0.0" prefWidth="866.0" />
+      <TextField fx:id="Xfield" layoutX="77.0" layoutY="325.0" prefHeight="25.0" prefWidth="102.0">
+         <font>
+            <Font name="Noteworthy Light" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="329.0" text="Enter x :" underline="true">
+         <font>
+            <Font name="Osaka" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="OperandField" layoutX="224.0" layoutY="325.0" prefWidth="150.0" promptText="Operand Choice" />
+      <TextField fx:id="Yfield" layoutX="450.0" layoutY="325.0" prefHeight="25.0" prefWidth="102.0" />
+      <Label layoutX="392.0" layoutY="330.0" text="Enter y: ">
+         <font>
+            <Font name="Osaka" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Display2Area" layoutX="586.0" layoutY="251.0" prefHeight="256.0" prefWidth="278.0" />
+      <Button fx:id="ComputeButton" layoutX="426.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#Compute" prefHeight="10.0" prefWidth="126.0" style="-fx-background-radius: 7; -fx-background-color: #10657c; -fx-text-fill: #ffffff;" text="Compute" textFill="WHITE" />
+      <Label layoutX="324.0" layoutY="215.0" text="Computation Area" underline="true">
+         <font>
+            <Font name="Monaco" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="ClearButton" layoutX="426.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#ClearAllArea" prefHeight="10.0" prefWidth="126.0" style="-fx-background-radius: 7; -fx-background-color: #1065bc; -fx-text-fill: #ffffff;" text="Clear All" textFill="WHITE" />
+      <Button fx:id="LogOutButton" layoutX="687.0" layoutY="570.0" mnemonicParsing="false" onMouseClicked="#LogOut" prefHeight="30.0" prefWidth="164.0" style="-fx-background-radius: 7; -fx-background-color: #d70707; -fx-text-fill: #ffffff;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Menlo Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
